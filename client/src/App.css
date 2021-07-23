@@ -1,0 +1,35 @@
+.mycard{
+  margin-top: 50px;
+}
+
+.auth-card{
+  padding : 20px;
+  text-align: center;
+  max-width: 500px;
+  margin: 10px auto;
+}
+
+.login{
+  margin-top: 10px;
+}
+
+.home-card{
+  padding : 20px !important;
+  max-width: 500px !important;
+  margin: 10px auto !important;
+}
+
+.captions{
+  line-height: 75%;
+  font-family: 'comic sans ms'; 
+}
+
+.delete{
+  background-color: rgb(255, 109, 109);
+  color: black;
+}
+
+#toast-container{
+  top:30px !important ;
+  right: 20px !important;
+}
