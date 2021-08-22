@@ -14,6 +14,11 @@ router.post('/signup', (req, res) => {
   if (!email || !password || !name) {
     return res.status(422).json({ error: 'Please add all the fields' });
   }
+  if (!email.includes('.ku.edu.np')) {
+    return res
+      .status(422)
+      .json({ error: 'Email does not belong to KU students/teachers' });
+  }
   User.findOne({ email: email })
     .then((savedUser) => {
       if (savedUser) {
