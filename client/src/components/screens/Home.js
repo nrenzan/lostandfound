@@ -124,10 +124,7 @@ const Home = () => {
                   makeComment(e.target[0].value, item._id);
                 }}
               >
-                <input
-                  type="text"
-                  placeholder="Private comment(Please add the comments"
-                />
+                <input type="text" placeholder="Private comment." />
               </form>
             </div>
           </div>

@@ -6,12 +6,12 @@ const requireLogin = require('../middleware/requireLogin');
 const Post = mongoose.model('Post');
 const nodemailer = require('nodemailer');
 const sendgridTransport = require('nodemailer-sendgrid-transport');
-const { SENDGRID_API } = require('../config/keys');
 
 const transporter = nodemailer.createTransport(
   sendgridTransport({
     auth: {
-      api_key: SENDGRID_API
+      api_key:
+        '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'
     }
   })
 );
