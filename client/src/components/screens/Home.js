@@ -111,10 +111,13 @@ const Home = () => {
                     return (
                       <h6 key={record._id}>
                         <span style={{ fontWeight: '500' }}>
-                          {record.postedBy._id == state._id &&
+                          {(record.postedBy._id == item.postedBy._id ||
+                            record.postedBy._id == state._id) &&
                             record.postedBy.name}
                         </span>{' '}
-                        {record.postedBy._id == state._id && record.text}
+                        {(record.postedBy._id == item.postedBy._id ||
+                          record.postedBy._id == state._id) &&
+                          record.text}
                       </h6>
                     );
                   }))}
