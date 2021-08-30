@@ -129,7 +129,7 @@ const Home = () => {
               >
                 <input
                   type="text"
-                  placeholder="Private comment. Please add description to claim."
+                  placeholder="Private comment. Please add descriptions to claim."
                 />
               </form>
             </div>
